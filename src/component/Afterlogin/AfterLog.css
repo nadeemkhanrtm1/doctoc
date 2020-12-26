@@ -1,0 +1,534 @@
+/****common CSS *******/
+a {
+  text-decoration: none !important;
+}
+
+/*********************** Navigation bar Code below utill the next comment meet ******************************/
+
+.nav_bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(141, 141, 141);
+  padding: 0 0 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.logo_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.logo_items img {
+  width: 64px;
+  height: 64px;
+}
+.logo_items a {
+  padding: 0 20px;
+  border-right: 1px solid black;
+  font-size: 1.2rem;
+  margin: 0 0 0 20px;
+}
+.logo_items a:last-child {
+  border-right: none;
+}
+.profile_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  height: 100%;
+  background: rgba(0, 164, 173, 0.3);
+  border-bottom-left-radius: 30px;
+}
+.profile_nav a {
+  padding-right: 30px;
+  margin: 0px !important;
+  text-decoration: none;
+}
+.profile_nav img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.profile_nav .logoutbtn:hover {
+  color: white;
+}
+
+/********************************* Dash Board Medication icon CSS start here below **************************/
+
+.dashBoardContainer {
+  padding-top: 2rem;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.dsh_heading {
+  color: #858585;
+}
+
+.dash-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.dash-col-1,.dash-col-2 {
+  width: 200px;
+  height: 80px;
+  background: url(../../images/dash-col-1.png) no-repeat;
+  background-position: -10px 0;
+  position: relative;
+  box-shadow: 0px 7px 4px rgba(224, 224, 236, 0.4);
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.dash-col-1 img,.dash-col-2 img {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.dash-col-1 time,.dash-col-2 time {
+  font-family: "Lato";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  color: #486581;
+  position: absolute;
+  left: 70%;
+  top: 20%;
+}
+
+.dash-col-1 span,.dash-col-2 span {
+  font-family: "Lato";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  color: #102a43;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+}
+
+.dash-col-1 i,.dash-col-2 i {
+  font-family: "Lato";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  color: #102a43;
+  position: absolute;
+  left: 15%;
+  top: 75%;
+}
+
+.dash-col-1 input,.dash-col-2 input  {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: scale(2);
+}
+
+
+.dash-col-3 {
+  flex: 1;
+}
+
+.dash-col-4 {
+  flex: 1;
+}
+
+.dash-col-5 {
+  flex: 1;
+  text-align: center;
+}
+
+.dash-col-5 button {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFAC50;
+  padding: 15px 30px;
+  border-radius: 40px;
+  border: none;
+  transition: 0.6s;
+  position: relative;
+  left: -20px;
+
+}
+
+.dash-col-5 button:hover{
+  color: #000000;
+  box-shadow: 1px 1px 10px rgb(197, 197, 197);
+}
+
+.schedule_app {
+  width: 220px !important;
+  height: 50px !important;
+}
+
+/************************** Conatiner Appointment Prescriptions Reports and Messages *************************/
+/********************************************* Appointment Section *******************************************/
+
+.flexBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.flex1 {
+  width: 1300px;
+  padding: 10px 0 0 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgb(197, 197, 197);
+}
+
+.innerFlexforFirstDiv {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.innerFlexforFirstDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.innerFlexforFirstDiv .firstdiv {
+  width: 75%;
+}
+
+.innerFlexforFirstDiv .firstdiv .link {
+  font-family: "Lato";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  color: #1e1c61;
+  background: #fff5ea;
+  padding: 20px 50px;
+  border-top-right-radius: 25px;
+}
+
+.innerFlexforFirstDiv div .link:nth-child(2) {
+  background: #ffe9d0;
+  width: 200px;
+}
+
+.innerFlexforFirstDiv div .link:nth-child(3) {
+  background: #ffd8ab;
+}
+
+.innerFlexforFirstDiv div .link:nth-child(4) {
+  background: #ffc98a;
+}
+/******************************************** apointment table **********************************************/
+
+.tableSection {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.tableSection table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  padding: 0 10px;
+}
+
+.tableSection table tr th {
+  width: 150px;
+  text-align: left;
+}
+
+.tableSection table tr td {
+  border-bottom: 1px solid rgb(224, 224, 224);
+  border-top: 1px solid rgb(224, 224, 224);
+  padding: 8px 0;
+}
+
+.cnfbtn {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px !important;
+  background-color: #eeffe8 !important;
+  color: rgb(4, 255, 4) !important;
+}
+
+.cnfbtn:hover {
+  box-shadow: 0px 3.84px 3.84px rgba(0, 0, 0, 0.25);
+}
+
+.cncbtn {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px !important;
+  background-color: #ffc1c1 !important;
+  color: #ff0000 !important;
+}
+
+.cncbtn:hover {
+  box-shadow: 0px 3.84px 3.84px rgba(0, 0, 0, 0.25);
+}
+
+.pndbtn {
+  border: none;
+  border-radius: 20px !important;
+  background-color: #fffae1 !important;
+  color: #ffd500 !important;
+  cursor: pointer;
+}
+
+.pndbtn:hover {
+  box-shadow: 0px 3.84px 3.84px rgba(0, 0, 0, 0.25);
+}
+
+.vwbtn {
+  cursor: pointer;
+  border-radius: 20px !important;
+  color: #858585 !important;
+  border: none;
+}
+.vwbtn:hover {
+  box-shadow: 0px 3.84px 3.84px rgba(0, 0, 0, 0.25);
+}
+.rbkbtn {
+  border: none;
+  cursor: pointer;
+  border-radius: 20px !important;
+  background: #ffac50 !important;
+  color: #858585 !important;
+}
+
+.rbkbtn:hover {
+  box-shadow: 0px 3.84px 3.84px rgba(0, 0, 0, 0.25);
+}
+.flex2 {
+  width: 450px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgb(197, 197, 197);
+}
+
+.innerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.innerFlex .innerContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.innerFlex img {
+  width: 150px;
+  height: 135px;
+}
+
+.innerFlex .innerContainer p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-bottom: 0px !important;
+  font-family: Overpass;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: -0.38207462430000305px;
+  text-align: left;
+}
+
+.findoc {
+  width: 200px !important;
+  height: 45px !important;
+  cursor: pointer !important;
+}
+
+/******************************************** Prescriptions Sections *****************************************/
+
+.msgTable {
+  margin-top: 20px;
+}
+
+.msgTable table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  padding: 0 10px;
+}
+
+.msgTable table tr th:nth-child(1) {
+  width: 200px;
+}
+
+.msgTable table tr th:nth-child(2) {
+  width: 250px;
+}
+
+.msgTable table tr th:nth-child(3) {
+  width: 250px;
+}
+
+.msgTable table tr th:nth-child(4) {
+  width: 600px;
+}
+
+.msgTable table tr td {
+  text-align: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  border-top: 1px solid rgb(224, 224, 224);
+  padding: 8px 0;
+}
+.msgTable table tr {
+  transition: 0.6s ease;
+}
+
+.msgTable table tbody tr:hover {
+  background: #fbd9b4;
+}
+
+.msgvwbtn {
+  width: 80px;
+  background-color: #ffac50 !important;
+  align-self: center;
+  border: none !important;
+  border-radius: 20px !important;
+  color: #5b5b5b !important;
+  font-family: "Poppins" !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+}
+
+.msgvwbtn:hover {
+  box-shadow: 0px 3.90764px 3.90764px rgba(0, 0, 0, 0.25);
+}
+
+/******************************************* Reports section *************************************************/
+
+.rptTable {
+  margin-top: 20px;
+}
+
+.rptTable table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  padding: 0 10px;
+}
+
+.rptTable table tr th:nth-child(1) {
+  width: 175px;
+}
+.rptTable table tr th:nth-child(2) {
+  width: 175px;
+}
+.rptTable table tr th:nth-child(3) {
+  width: 175px;
+}
+.rptTable table tr th:nth-child(4) {
+  width: 175px;
+}
+.rptTable table tr th:nth-child(5) {
+  width: 300px;
+}
+.rptTable table tr th:nth-child(6) {
+  width: 300px;
+}
+
+.rptTable table tr td {
+  text-align: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  border-top: 1px solid rgb(224, 224, 224);
+  padding: 8px 0;
+}
+
+.rptvwbtn {
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px !important;
+  background: linear-gradient(0deg, #f1f1f1, #f1f1f1), #f1f1f1;
+  color: #858585;
+}
+
+.rptvwbtn:hover {
+  box-shadow: 0px 3.84px 3.84px rgba(0, 0, 0, 0.25);
+}
+
+/********************************** Prescription Section ****************************************************/
+
+.prsTable {
+  margin-top: 20px;
+}
+
+.prsTable table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  padding: 0 10px;
+}
+
+.prsTable table tr th:nth-child(1) {
+  width: 200px;
+}
+.prsTable table tr th:nth-child(2) {
+  width: 200px;
+}
+.prsTable table tr th:nth-child(3) {
+  width: 200px;
+}
+.prsTable table tr th:nth-child(4) {
+  width: 700px;
+}
+
+.prsTable table tr td {
+  text-align: center;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  border-top: 1px solid rgb(224, 224, 224);
+  padding: 8px 0;
+}
+
+.prsprintbtn {
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background: linear-gradient(0deg, #f1f1f1, #f1f1f1), #f1f1f1;
+  color: #858585;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0px 3.84px 3.84px rgba(0, 0, 0, 0.25);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}

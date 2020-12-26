@@ -1,0 +1,17 @@
+{
+    "api": { 
+      "invokeUrl": " https://ejf6w0kbqh.execute-api.us-east-2.amazonaws.com/patient",
+      "medDataInvokeUrl": "https://a44duyd6uf.execute-api.us-east-2.amazonaws.com/medData"
+    },
+    "cognito":{
+      "REGION": "us-east-2",
+      "USER_POOL_ID": "us-east-2_X7kUq13UV",
+      "APP_CLIENT_ID": "dg11rft8rsfddeqkhiq35ksto"
+    },
+
+    "cognito2":{
+      "REGION": "us-east-2",
+      "USER_POOL_ID": "us-east-2_rYyGXAkVA",
+      "APP_CLIENT_ID": "2a56scbunq889gq8pmhnkc8cu0"
+    } 
+}
