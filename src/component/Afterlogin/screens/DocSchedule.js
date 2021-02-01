@@ -9,14 +9,20 @@ import ArrowRight from "../../../images/arrow-right.png";
 import moment from "moment";
 
 const DocSchedule = () => {
+  const [monthInShort,setMonthInShort] = useState(moment().format('MMM'));
   const [month,setMonth] = useState(moment().format('MMMM'));
   const [year,setYear] = useState(moment().year());
+  const [daysInMonth,setDaysInMonth] = useState(moment().daysInMonth());
   //Pre And Next Month Handler
   const PreMonth = () => {
-      setMonth(moment(`1-${month}-2020`).subtract(1,'months').format('MMMM'))
+      setMonth(moment(`1-${month}-${year}`).subtract(1,'months').format('MMMM'))
+      setDaysInMonth(moment(`1-${month}-${year}`).subtract(1,'months').daysInMonth())
+      setMonthInShort(moment(`1-${month}-${year}`).subtract(1,'months').format('MMM'))
   }
   const NextMonth = () => {
-    setMonth(moment(`1-${month}-2020`).add(1,'months').format('MMMM'))
+    setMonth(moment(`1-${month}-${year}`).add(1,'months').format('MMMM'))
+    setDaysInMonth(moment(`1-${month}-${year}`).add(1,'months').daysInMonth())
+    setMonthInShort(moment(`1-${month}-${year}`).add(1,'months').format('MMM'))
   }
 
   //Pre and Next Year Handler
@@ -25,8 +31,16 @@ const DocSchedule = () => {
   }
   const NextYear = () => {
     setYear(year+1)
-    
   }
+
+
+  //get full dates of months in array
+ const daysofMonth = [];
+ for( var i =1; i<=daysInMonth;i++){
+   daysofMonth.push(i);
+ }
+ //days of the week
+ const weekDays = ["MON","TUE","WED","THU","FRI","SAT","SUN"]
   return (
     <React.Fragment>
       <Navbar/>
@@ -102,11 +116,23 @@ const DocSchedule = () => {
             </div>
           </div>
           <div className="ds-inner-row-2">
-            <img src={ArrowLeft} alt=""/>
+            <img src={ArrowLeft} alt="arrow-left"/>
               {
-                /* Dates of the month */
+                daysofMonth.map((dates)=>{
+                  return(
+                  <React.Fragment>
+                    <i>{dates}</i>
+                    <i>{monthInShort}</i>
+                    <i>{weekDays[moment(`${dates}-${monthInShort}-${year}`).day()-1]}</i>
+                  </React.Fragment>
+                  )
+                  
+                })
               }
-            <img src={ArrowRight} alt=""/>
+              <div className="ds-carousel">
+                <span>1</span>
+              </div>
+            <img src={ArrowRight} alt="arrow-right"/>
           </div>
           <div className="ds-inner-row-3">
               <table>
